@@ -1,0 +1,46 @@
+package org.example;
+
+public class Absences {
+    private int id;
+    private String reason;
+    private String date;
+
+    public void apply() {
+        // implementation
+    }
+
+    // Getters and setters for private field id
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getReason() {
+        return reason;
+    }
+
+    public void setReason(String reason) {
+        this.reason = reason;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public static void main(String[] args) {
+        Absences absences = new Absences();
+        absences.setId(1);
+        absences.setReason("Sick leave");
+        absences.setDate("2023-05-15");
+        System.out.println("Absences ID: " + absences.getId());
+        System.out.println("Reason: " + absences.getReason());
+        System.out.println("Date: " + absences.getDate());
+    }
+}
