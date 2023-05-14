@@ -1,0 +1,72 @@
+package org.example;
+
+public class Salary {
+    private int id;
+    private String labourhours;
+    private String overtime;
+    private String total;
+    private String details;
+
+    public void add() {
+        // implementation
+    }
+
+    public void update() {
+        // implementation
+    }
+
+    // Getters and setters for private field id
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getLabourhours() {
+        return labourhours;
+    }
+
+    public void setLabourhours(String labourhours) {
+        this.labourhours = labourhours;
+    }
+
+    public String getOvertime() {
+        return overtime;
+    }
+
+    public void setOvertime(String overtime) {
+        this.overtime = overtime;
+    }
+
+    public String getTotal() {
+        return total;
+    }
+
+    public void setTotal(String total) {
+        this.total = total;
+    }
+
+    public String getDetails() {
+        return details;
+    }
+
+    public void setDetails(String details) {
+        this.details = details;
+    }
+
+    public static void main(String[] args) {
+        Salary salary = new Salary();
+        salary.setId(1);
+        salary.setLabourhours("40");
+        salary.setOvertime("5");
+        salary.setTotal("4500");
+        salary.setDetails("Monthly salary for employee 1");
+        System.out.println("Salary ID: " + salary.getId());
+        System.out.println("Labour hours: " + salary.getLabourhours());
+        System.out.println("Overtime: " + salary.getOvertime());
+        System.out.println("Total: " + salary.getTotal());
+        System.out.println("Details: " + salary.getDetails());
+    }
+}
